@@ -80,6 +80,14 @@
             // b) No, interfaces cannot have constructors
 
             #endregion
+
+            #region Q10
+
+            // How can a C# class implement multiple interfaces?
+
+            // c) By separating interface names with commas
+
+            #endregion
         }
     }
 }
