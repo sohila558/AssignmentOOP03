@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo
 {
-    internal class Employee : ICloneable
+    internal class Employee : IComparable
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -16,6 +16,17 @@ namespace Demo
         public object Clone()
         {
             return new Employee() { Id = this.Id, Name = this.Name, Age = this.Age, Salary = this.Salary };
+        }
+
+        public int CompareTo(object? obj)
+        {
+            Employee e = (Employee)obj;
+
+            //if(this.Age > e.Age) return 312;
+            //else if(this.Age < e.Age) return -312;
+            //else return 0;
+
+            return this.Age.CompareTo(e.Age);
         }
 
         public override string ToString()
