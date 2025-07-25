@@ -1,5 +1,6 @@
 ﻿using Demo.Interface;
 using Demo.InterfaceEX02;
+using Demo.InterfaceEX03;
 
 namespace Demo
 {
@@ -114,7 +115,18 @@ namespace Demo
 
             #endregion
 
+            #region InterfaceEX03
+            //Car car = new Car();
+            //car.Speed = 120;
+            //car.Forward();
 
+            //Airplane airplane = new Airplane();
+            //IMoveable moveable = airplane;
+            //moveable.Forward();
+
+            //IFlyable flyable = airplane;
+            //flyable.Forward(); 
+            #endregion
 
         }
     }

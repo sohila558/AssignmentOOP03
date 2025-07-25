@@ -14,10 +14,5 @@ namespace Demo.InterfaceEX02
         {
             Current += 2;
         }
-
-        public void Reset()
-        {
-            Current = 0;
-        }
     }
 }

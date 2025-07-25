@@ -11,6 +11,9 @@ namespace Demo.InterfaceEX02
         public int Current { get; set; }
 
         void Next();
-        void Reset();
+        public void Reset()
+        {
+            Current = 0;
+        }
     }
 }
