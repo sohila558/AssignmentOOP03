@@ -22,6 +22,14 @@
             // both are correct but if ia have to pick one then it will be "Private"
 
             #endregion
+
+            #region Q03
+
+            // Can an interface contain fields in C#?
+
+            // b) No
+
+            #endregion
         }
     }
 }
