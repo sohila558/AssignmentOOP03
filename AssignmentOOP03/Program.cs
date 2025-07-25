@@ -38,6 +38,16 @@
             // b) Yes, interfaces can inherit from multiple interfaces
 
             #endregion
+
+            #region Q05
+
+            // Which keyword is used to implement an interface in a class in C#?
+
+            // None of the above answers used to implement an interface but if you mean the keyword that we used to describe
+            // the process of implementing then the answer is :
+            // "d) implements"
+
+            #endregion
         }
     }
 }
