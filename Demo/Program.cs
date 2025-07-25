@@ -128,6 +128,56 @@ namespace Demo
             //flyable.Forward(); 
             #endregion
 
+            #region Shallow Copy VS Deep Copy
+            // Shallow Copy VS Deep Copy
+
+            //int[] Arr01 = { 1, 2, 3 };
+            //int[] Arr02 = { 4, 5, 6 };
+
+            //Console.WriteLine($"Arr01 : {Arr01.GetHashCode()}");
+            //Console.WriteLine($"Arr02 : {Arr02.GetHashCode()}");
+
+            // Arr01 = Arr02; // Shallow Copy
+            // Copy Identity
+            // { 1, 2, 3 } ---> Has Two References Arr01, Arr02
+            // { 4, 5, 6 } ---> Unreachable object
+
+            //Console.WriteLine();
+            //Console.WriteLine($"Arr01 : {Arr01.GetHashCode()}");
+            //Console.WriteLine($"Arr02 : {Arr02.GetHashCode()}");
+
+            // Identity (Address) + Object State [Data]
+
+            //Arr02[0] = 100;
+            //Console.WriteLine(Arr01[0]);
+
+
+            //int[] Arr01 = { 1, 2, 3 };
+            //int[] Arr02 = { 4, 5, 6 };
+
+            //Console.WriteLine($"Arr01 : {Arr01.GetHashCode()}");
+            //Console.WriteLine($"Arr02 : {Arr02.GetHashCode()}");
+
+            //Arr01 = (int[]) Arr02.Clone(); // Deep Copy
+            //// Clone Method will Copy the object state of the caller
+            //// Assign the new object to Arr02, will generate new Identity
+
+            //// Copy Identity
+            //// { 1, 2, 3 } ---> Has Two References Arr01, Arr02
+            //// { 4, 5, 6 } ---> Unreachable object
+
+            //Console.WriteLine();
+            //Console.WriteLine($"Arr01 : {Arr01.GetHashCode()}");
+            //Console.WriteLine($"Arr02 : {Arr02.GetHashCode()}");
+
+            //// Identity (Address) + Object State [Data]
+
+            //Arr02[0] = 100;
+            //Console.WriteLine(Arr01[0]); 
+            #endregion
+
+
+
         }
     }
 }
