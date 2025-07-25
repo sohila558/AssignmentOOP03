@@ -88,6 +88,20 @@
             // c) By separating interface names with commas
 
             #endregion
+
+            #region Q11
+
+            // Define an interface named IShape with a property Area and a method DisplayShapeInfo.
+            // Create two interfaces, ICircle and IRectangle, that inherit from IShape.
+            // Implement these interfaces in classes Circle and Rectangle.
+            // Test your implementation by creating instances of both classes and displaying their shape information.
+
+            //Rectangle rectangle = new Rectangle(5, 6);
+            //rectangle.DisplayShapeInfo();
+
+            //Circle circle = new Circle(5);
+            //circle.DisplayShapeInfo();
+            #endregion
         }
     }
 }
