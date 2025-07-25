@@ -48,6 +48,14 @@
             // "d) implements"
 
             #endregion
+
+            #region Q06
+
+            // Can an interface contain static methods in C#?
+
+            // a) Yes
+
+            #endregion
         }
     }
 }
