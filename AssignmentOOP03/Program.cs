@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region Q01
+
+            // What is the primary purpose of an interface in C#?
+
+            // b) To define a blueprint for a class
+
+            #endregion
         }
     }
 }
