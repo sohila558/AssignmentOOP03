@@ -1,6 +1,10 @@
 ﻿using AssignmentOOP03.Q12;
+using AssignmentOOP03.Q13;
+using System;
 using System.Data;
 using System.Net;
+using System.Threading.Channels;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AssignmentOOP03
 {
@@ -23,7 +27,7 @@ namespace AssignmentOOP03
             // a) private
             // b) protected
 
-            // both are correct but if ia have to pick one then it will be "Private"
+            // both are correct but if i have to pick one then it will be "Private"
 
             #endregion
 
@@ -140,7 +144,33 @@ namespace AssignmentOOP03
 
             #endregion
 
+            #region Q13
 
+            // we define the INotificationService interface with a method SendNotification that takes 
+            // a recipient and a message as parameters. We then create three classes: EmailNotificationService,
+            // SmsNotificationService, and PushNotificationService, which implement the INotificationService interface.
+            // In each implementation, we provide the logic to send notifications through the respective communication
+            // channel:The EmailNotificationService class simulates sending an email by outputting a message
+            // to the console.The SmsNotificationService class simulates sending an SMS by outputting a message
+            // to the console.The PushNotificationService class simulates sending a push notification by outputting
+            // a message to the console.In the Main method, we create instances of each notification service class
+            // and call the SendNotification method with sample recipient and message values.
+            // This implementation allows you to easily switch between different notification channels by creating
+            // new classes that implement the INotificationService interface and provide the specific logic for each
+            // channel.
+
+            //INotificationService service;
+
+            //service = new EmailNotificationService();
+            //service.SendNotification("sohaila@gmail.com", "Hello from Email!");
+
+            //service = new SmsNotificationService();
+            //service.SendNotification("01234567", "Hello from SMS!");
+
+            //service = new PushNotificationService();
+            //service.SendNotification("Sohaila", "Push Notification: You have a message!");
+
+            #endregion
         }
     }
 }
